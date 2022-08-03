@@ -23,11 +23,9 @@
     "helmet": "^5.0.2",
     "mongoose": "^6.4.0",
     "promise-mysql2": "^1.0.0",
-    "puppeteer": "^15.5.0",
     "request": "^2.88.2",
     "serve-index": "^1.9.1",
     "stripe": "^8.219.0",
-    "superagent": "^8.0.0",
     "websocket": "^1.0.34",
     "xlsx": "^0.18.5",
     "ytdl-core": "^4.11.0"
