@@ -1,0 +1,6 @@
+npm i -g typescript
+tsc --init 
+convert ts to js  = tsc test.ts
+ or in watch mode = tsc test.ts -w
+
+ recompile = tsc

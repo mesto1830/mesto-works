@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 20px;
+    }
+    .container{
+      display: flex;
+    }
+    label{
+      padding: 10px;
+    }
+    .text{
+      font-size: 30px;
+      transition: transform 1s;
+    }
+    #scale:checked + #text{
+      transform: scale(1.4);
+    }
+    #scaleY:checked + #textY{
+      transform: scaleY(1.4);
+    }
+    #scaleX:checked + #textX{
+      transform: scaleX(1.4);
+    }
+    #scaleMinus:checked + #textMinus{
+      transform: scale(-1);
+    }
+    #scaleMinusY:checked + #textMinusY{
+      transform: scaleY(-1);
+    }
+    #scaleMinusX:checked + #textMinusX{
+      transform: scaleX(-1);
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Transform scale</h1>
+  <div class="container">
+    <label for="scale">
+      <input type="radio" id="scale">Scale
+      <div id="text" class="text">Text</div>
+    </label>
+    <label for="scaleY">
+      <input type="radio" id="scaleY">ScaleY
+      <div id="textY" class="text">Text</div>
+    </label>
+    <label for="scaleX">
+      <input type="radio" id="scaleX">ScaleX
+      <div id="textX" class="text">Text</div>
+    </label>
+    <label for="scaleMinus">
+      <input type="radio" id="scaleMinus">Scale Minus
+      <div id="textMinus" class="text">Text</div>
+    </label>
+    <label for="scaleMinusY">
+      <input type="radio" id="scaleMinusY">Scale MinusY
+      <div id="textMinusY" class="text">Text</div>
+    </label>
+    <label for="scaleMinusX">
+      <input type="radio" id="scaleMinusX">Scale MinusX
+      <div id="textMinusX" class="text">Text</div>
+    </label>
+  </div>
+</body>
+</html>

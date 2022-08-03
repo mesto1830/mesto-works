@@ -1,0 +1,71 @@
+1 Open repo on guthub then clone it to local
+2 - git clone https://github.com/mesto1830/test.git
+
+or fallow base section to ->
+
+base-------------------------------------------------------------
+1 create a repo on github
+2 create project on local machine and enter in
+3 git init
+4 git branch -M main
+5 git remote add origin https://github.com/mesto1830/test.git
+
+Then
+create a file or files in project folder
+1 git status
+2 git add filename or --all or git add .
+3 commit -m 'first'
+4 git push -u origin main or git pull
+
+
+commit---------------------------------------------------------
+  git status
+  git add filename or --all  //adding to stage before to commit
+  git rm --cached filename or all  //removing from stage
+
+diff----------------------------------------------------------
+  git diff
+  git diff --cached
+
+branch---------------------------------------------------------
+Create Branch
+  git branch -c branchname
+  git push origin branchname //push all items from main to new branch
+
+List Branch
+  git branch --all
+  git branch //list of local branches
+  git fetch //list of remote branches
+
+Switch Branch`
+  git checkout branchname
+
+Merge Branch
+  git diff branchname branchname
+  git checkout master then git merge branchname
+  git push -u origin main
+
+Delete Branch
+  git branch --delete dev //delete on local then
+  git push origin --delete branchname //delete on remote
+
+Reset------------------------------------------------------
+  //Hard reset return to a specific commit but delete all commits after given commit id
+    git log --oneline //shorthand
+    git reset --hard commitid //get it with git log --oneline
+    git push -f origin main
+
+Reset One File------------------------------------------------------
+  git reset HEAD filename
+  git checkout --filename   //restore changes in file on local
+
+Revert-----------------------------------------------------
+  //revert return to a specific commit but dosnt delete any commits
+    git log --oneline //shorthand
+    git revert commitid
+    git push -u origin main
+
+
+NOT: If you have second account or not setting username and password use code that belov
+1 - git clone https://mestokaya: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@github.com/mestokaya/test.git
+then follow  regulerly commands

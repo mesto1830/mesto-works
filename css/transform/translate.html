@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      padding: 20px;
+    }
+    .container{
+      display: flex;
+    }
+    label{
+      padding: 10px;
+    }
+    .box{
+      width: 100px;
+      height: 100px;
+      background-color: lightseagreen;
+      border-radius: 5px;
+      margin: 10px 0;
+      transition: transform 1s;
+    }
+    #translate:checked + #box{
+      transform: translate(50%,50%);
+    }
+    #translateY:checked + #boxY{
+      transform: translateY(50%);
+    }
+    #translateX:checked + #boxX{
+      transform: translateX(50%);
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Transform Translate</h1>
+  <div class="container">
+    <label for="translate">
+      <input type="radio" id="translate">Translate
+      <div id="box" class="box">Box</div>
+    </label>
+    <label for="translateY">
+      <input type="radio" id="translateY">TranslateY
+      <div id="boxY" class="box">Botranslatex</div>
+    </label>
+    <label for="translateX">
+      <input type="radio" id="translateX">TranslateX
+      <div id="boxX" class="box">Box</div>
+    </label>
+  </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2 style="text-align: center;">Handtrack</h2>
+  <audio src="./scream.mp3" id="audio"></audio>
+  <video src="" id="video"></video>
+  <canvas id="canvas"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/handtrackjs@0.1.5/dist/handtrack.min.js"></script>
+  <script >
+    const video = document.getElementById('video')
+    const audio = document.getElementById('audio')
+    const canvas = document.getElementById('canvas')
+    const ctx = canvas.getContext('2d')
+    let model;
+
+    navigator.getUserMedia =
+    navigator.getUserMedia ||
+    navigator.webKitGetUserMedia ||
+    navigator.mozGetUserMedia ||
+    navigator.msGetUserMedia
+
+    handTrack.startVideo(video).then(status => {
+      if(status){
+        navigator.getUserMedia(
+          {video: {}},
+          stream => {
+            video.srcObject = stream
+          },
+          err => console.log(err)
+        )
+      }
+    })
+    handTrack.load().then(item => {
+      model = item
+    })
+
+  </script>
+</body>
+</html>

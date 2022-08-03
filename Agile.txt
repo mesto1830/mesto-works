@@ -1,0 +1,15 @@
+Agile Manifest
+
+1 = Surecler ve Analizlerden ziyade Bireyler ve Etkilsimlere
+2 = Kapsamli Doumantasyondan ziyade Calisan yazilima
+3 = Sozlesme Pazarliklarindan ziyade Musteri ile isbirligine
+4 = Bir Plana bagli kalmaktan ziyade Degisime karslik vermeye
+    odaklidir.
+Sol taraftaki maddeler'de onemli ancak sag taraftakiler olmazsa olmazlarimizdir.
+
+
+
+
+1 = Musteri surec basinda ne istedigini bilmez(Bunada hakki vardir)
+2 = Problemler ortadan kaldirilmaz ama onceden gorulebilir ve risk azalitabilir
+3 = En iyi Mimariler ve Tasarimlar kendi kendini orgutlyen takimlardan ortaya cikar(Sen sunu yapacaksin sende bunu yapacaksin gibi degil
